@@ -1,10 +1,14 @@
+html, body { height: 100%; }
 body {
-    font-family: 'Segoe UI', Roboto, sans-serif;
+    font-family: Roboto, 'Segoe UI', sans-serif;
     background-color: #f8f9fa;
     margin: 0;
     padding: 0;
     color: #2c3e50;
     line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 header {
     background: linear-gradient(135deg, #2e3a59 0%, #1a237e 100%);
@@ -29,6 +33,7 @@ section {
     padding: 54px 10%;
     max-width: 1200px;
     margin: 0 auto;
+    flex: 1;
 }
 .card {
     background: white;
@@ -57,25 +62,6 @@ h2::after {
     height: 3px;
     background: #2e3a59;
 }
-ul {
-    text-align: left;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 0;
-    list-style-type: none;
-}
-li {
-    font-size: 1em;
-    margin-bottom: 13px;
-    padding: 13px;
-    border-radius: 8px;
-    background: #f8f9fa;
-    transition: background 0.3s ease;
-}
-li:hover {
-    background: #e9ecef;
-}
 .contact-links {
     display: flex;
     justify-content: center;
@@ -100,70 +86,6 @@ footer {
     text-align: center;
     padding: 5px 0;
     margin-top: 0px;
-}
-
-.education-card {
-    background: white;
-    border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 15px;
-    box-shadow: 0 3px 20px rgba(0,0,0,0.08);
-    transition: transform 0.3s ease;
-}
-
-.education-card:hover {
-    transform: translateY(-5px);
-}
-
-.education-card h3 {
-    color: #2e3a59;
-    margin: 0 0 10px 0;
-    font-size: 1.4em;
-}
-
-.education-card .duration {
-    color: #666;
-    font-size: 1.1em;
-    margin-bottom: 10px;
-    font-weight: 500;
-}
-
-.education-card .degree {
-    font-size: 1.1em;
-    margin: 5px 0;
-    color: #2c3e50;
-}
-
-.education-card .grade {
-    font-size: 1.1em;
-    color: #2e3a59;
-    font-weight: 500;
-    margin: 5px 0;
-}
-
-.experience-card .responsibilities {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    display: block;
-}
-
-.experience-card .responsibilities li {
-    margin-bottom: 0px;
-    padding: 8px 0 8px 25px;
-    position: relative;
-    background: none;
-}
-
-.experience-card .responsibilities li:before {
-    content: "→";
-    position: absolute;
-    left: 0;
-    color: #2e3a59;
-}
-
-.social-links {
-    margin-top: 20px;
 }
 
 .social-links {
